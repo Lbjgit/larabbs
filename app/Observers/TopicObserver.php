@@ -11,7 +11,7 @@ class TopicObserver
 {
     public function saving(Topic $topic)
     {
-        $topic->except = make_excerpt($topic->body);
+        $topic->excerpt = make_excerpt($topic->body);
     }
 
     public function creating(Topic $topic)
