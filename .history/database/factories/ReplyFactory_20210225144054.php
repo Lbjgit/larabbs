@@ -10,6 +10,6 @@ $factory->define(App\Models\Reply::class, function (Faker $faker) {
         'created_at' => $time,
         'updated_at' => $time,
         'topic_id' => rand(1, 100),
-        'user_id' => rand(1, 10),
+        'user_id' => rand(1, 100),
     ];
 });
